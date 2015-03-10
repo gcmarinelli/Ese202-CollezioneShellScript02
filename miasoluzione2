@@ -1,0 +1,39 @@
+ES 1
+
+for n in `ls -d */`
+
+do
+	date > $n/passaggio.txt
+
+done
+
+
+ES 2 
+
+for x in $(seq 10)
+
+do
+	mkdir "$@"$x
+
+done
+
+
+ES 3 
+
+for x in `cat accounts.txt`
+
+do
+	mkdir $x
+
+done
+
+ES 3 
+
+for x in `cat accounts.txt`
+
+do
+	rm -r $x
+
+done
+
+
